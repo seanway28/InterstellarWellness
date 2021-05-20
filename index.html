@@ -3,9 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <!-- UIkit CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.22/dist/css/uikit.min.css" />
+<link rel="stylesheet" href="./assets/css/style.css">
+    <title>Interstellar Wellness </title>
 </head>
 <body>
-    
+    <div class="container">
+        <!-- Heading and Date -->
+        <header>
+            <!-- Triangle/figure -->
+            <div></div>
+
+            <!-- Heading -->
+            <h1></h1>
+
+            <!-- Date -->
+            <h2 id="todaysDate"></h2>
+        </header>
+        <!-- End of Header -->
+
+
+        <!-- What do you feel like for today? -->
+        <section>
+            <h1></h1>
+            <!-- Choices -->
+            <div class=".uk-column-1-4"> 
+                <!-- Horoscope -->
+               <div></div>
+
+               <!-- Inspiration -->
+               <div></div>
+
+               <!-- Motivation -->
+               <div></div>
+
+               <!-- Journaling -->
+               <div></div>
+            </div>
+
+        </section>
+
+        <!-- Horoscope -->
+        <section>
+            <!-- Birthday Selection -->
+            <div>
+                <h3></h3>
+                <!-- Date of Birth Form -->
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="MM/DD" id="dateofBirth" autocomplete="off">
+                      </div>
+                </form>
+            </div>
+
+            <!-- Today's Horoscope -->
+            <div>
+                <h2></h2>
+                <div class="today" id="todaysHoroscope"><p>text</p></div>
+            </div>
+
+            <!-- Other Horoscope Dates -->
+            <div class=".uk-column-1-2">
+                <!-- Tomorrow -->
+                <div>
+                    <h3></h3>
+                    <div class="tomorrow" id="tomorrowHoroscope"><p></p></div>
+                </div>
+
+                <!-- This Week -->
+                <div>
+                    <h3></h3>
+                    <div class="week" id="weekHoroscope"><p></p></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Inspiration -->
+        <section>
+            <h1></h1>
+            <!-- Quote container -->
+            <div class="inspiration-quote" id="inspirationQuote"><p></p></div>
+        </section>
+
+        <!-- Meditation -->
+        <section>
+            <h1></h1>
+            <!-- Video container -->
+            <div class="meditation" id="meditationVideo"></div>
+        </section>
+
+        <!-- Journaling -->
+        <section>
+            <h1></h1>
+            <div class="journal" id="journalArea">
+                <textarea name="journaling" id="journal-text" cols="30" rows="10"></textarea>
+            </div>
+        </section>
+    </div>
+   
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.22/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.22/dist/js/uikit-icons.min.js"></script>
+    <script src="./assets/js/script.js"></script>
 </body>
 </html>
