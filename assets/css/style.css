@@ -1,0 +1,13 @@
+:root {
+  --light-green: #c8dcc9; /*background*/
+  --lighter-gray: #f3f5f5;
+  --white: #ffffff;
+  -navy-blue: #184e77;
+  --dark-gray: #444647;
+  --olive-green: #b3be8d; /* today's horoscope text-box*/
+  --lighter-green: #dceab2; /* text-box for tomorrow and this week*/
+  --brown: #836e6c;
+  --forest-green: #505c19; /* font color */
+  --light-gray: #707070;
+  --natural-green: #a4a98b;
+}
