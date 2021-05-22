@@ -6,49 +6,78 @@
     <!-- UIkit CSS -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.22/dist/css/uikit.min.css" />
 <link rel="stylesheet" href="./assets/css/style.css">
-    <title>Interstellar Wellness </title>
+    <title>Interstellar Wellness</title>
 </head>
 <body>
     <div class="container">
         <!-- Heading and Date -->
         <header>
             <!-- Triangle/figure -->
-            <div></div>
-
+                <div class="arrow-up"></div>
+        
             <!-- Heading -->
-            <h1></h1>
+            <h1>Interstellar Wellness</h1>
 
             <!-- Date -->
-            <h2 id="todaysDate"></h2>
+            <h2 id="todaysDate" class="todays-date"></h2>
+
+            <span class="line"></span>
         </header>
         <!-- End of Header -->
 
 
         <!-- What do you feel like for today? -->
-        <section>
-            <h1></h1>
+        <section id="feel">
+            <h1>What do you feel like for today?</h1>
             <!-- Choices -->
-            <div class=".uk-column-1-4"> 
+            <div uk-grid class="space"> 
                 <!-- Horoscope -->
-               <div></div>
-
-               <!-- Inspiration -->
-               <div></div>
-
-               <!-- Motivation -->
-               <div></div>
-
-               <!-- Journaling -->
-               <div></div>
+                <div class="container">
+                    <a href="#horoscope">
+                        <div id="selection-1"  class="image" >
+    
+                        <div class="overlay" id="overlay-1">Horoscope</div>
+                    </div>
+                    </a>
+                    
+                </div>
+                <!-- Inspiration -->
+                <div class="container">
+                    <a href="#inspiration">
+                         <div id="selection-2" class="image" >
+    
+                    <div class="overlay" id="overlay-2">Inspiration</div>
+                </div>
+                </a>
+    
+                </div>
+                <!-- Meditation -->
+                <div class="container">
+                    <a href="#meditation">
+                        <div id="selection-3" class="image">
+    
+                    <div class="overlay" id="overlay-3">Meditation</div>
+                    </div>
+                </a>
+    
+                </div>
+                <!-- Journaling -->
+                <div class="container">
+                    <a href="journaling">
+                        <div id="selection-4" class="image" >
+                    <div class="overlay" id="overlay-4">Journaling</div>
+                </div>
+            </a>
+                </div>
             </div>
 
         </section>
 
-        <!-- Horoscope -->
-        <section>
+        <!-- Horoscope Section-->
+        <section id="horoscope">
             <!-- Birthday Selection -->
             <div>
-                <h3></h3>
+                <h3>Birthday:</h3>
                 <!-- Date of Birth Form -->
                 <form>
                     <div class="form-group">
@@ -58,23 +87,23 @@
             </div>
 
             <!-- Today's Horoscope -->
-            <div>
-                <h2></h2>
+            <div id="todaysHorHeading">
+                <h2>Today's [Zodiac] Horoscope</h2>
                 <div class="today" id="todaysHoroscope"><p>text</p></div>
             </div>
 
             <!-- Other Horoscope Dates -->
-            <div class=".uk-column-1-2">
+            <div class=".uk-column-1-2 .other-horoscopes">
                 <!-- Tomorrow -->
                 <div>
-                    <h3></h3>
-                    <div class="tomorrow" id="tomorrowHoroscope"><p></p></div>
+                    <h3>Tomorrow</h3>
+                    <div class="tomorrow" id="tomorrowHoroscope"><p>text</p></div>
                 </div>
 
                 <!-- This Week -->
                 <div>
-                    <h3></h3>
-                    <div class="week" id="weekHoroscope"><p></p></div>
+                    <h3>This Week</h3>
+                    <div class="week" id="weekHoroscope"><p>text</p></div>
                 </div>
             </div>
         </section>
@@ -104,6 +133,8 @@
    
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.22/dist/js/uikit.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.22/dist/js/uikit-icons.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./assets/js/script.js"></script>
 </body>
 </html>
