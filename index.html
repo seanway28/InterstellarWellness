@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- UIkit CSS -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.22/dist/css/uikit.min.css" />
-<link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.22/dist/css/uikit.min.css" />
+    <link rel="stylesheet" href="./assets/css/style.css">
     <title>Interstellar Wellness </title>
 </head>
+
 <body>
     <div class="container">
         <!-- Heading and Date -->
@@ -81,11 +82,21 @@
 
         <!-- Inspiration -->
         <section>
-            <h1></h1>
-            <!-- Quote container -->
+            <!-- <h1>Inspirational Quote of the Day</h1>
+            Quote container
             <div class="inspiration-quote" id="inspirationQuote">
+                <button class="uk-button uk-button-primary" type="button" data-uk-button>Get Quote of the Day</button>
                 <p></p>
+            </div> -->
+            <!--Quote Container-->
+            <div class="container">
+                <div class="quote-box">
+                <p id="quote">Inspirational Quote</p>
+                <small id="author">Author</small>
+                </div>
+                <button id="quoteBtn">New Quote</button>
             </div>
+
         </section>
 
         <!-- Meditation -->
@@ -104,9 +115,12 @@
         </section>
     </div>
    
+    
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.22/dist/js/uikit.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.22/dist/js/uikit-icons.min.js"></script>
     <script src="./assets/js/script.js"></script>
+    <!--Links to external Inspirational Quote Javascript-->
     <script src="assets/js/quote.js"></script>
+    
 </body>
 </html>
