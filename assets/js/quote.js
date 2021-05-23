@@ -1,46 +1,28 @@
-//Creates our constants to link from the Javascript file to the HTML
-const quote = document.querySelector("#quote");
-const author = document.querySelector("#author");
+//Creates our variables to connect the Javascript with the HTML
+
+//This is what will allow the quote to populate in the paragraph tag
+const quote = document.querySelector("#inspirationQuote");
+//This is what will allow the author to populate in the paragraph tag
+const quoteAuthor = document.querySelector("#inspirationQuoteAuthor");
+//This is the link to the quote button
 const quoteBtn = document.querySelector("#quoteBtn");
 
-//Event Listener for when User presses "New Quote" Btn
+//Adds Event Listener, when the user clicks the "Get New Quote", then a new quote is generated
 quoteBtn.addEventListener("click", getQuote);
 
-//Function to Get Quote
-function getQuote() {
+//This is the function that will pull the quote and the author
+function getQuote(){
+    //Using the Quotable API
     fetch("https://quotable.io/random")
-    //.then(res => console.log(res.json()))
-    .then (res => res.json())
+    // .then(res => console.log(res))
+    // .then(res => console.log(res.json()))
+    .then(res => res.json())
     .then(data => {
+        //This will put the quote on the page in the id="inspirationQuote" p tag in the inspiration-quote-container
         quote.innerHTML = data.content;
-        author.innerHTML = data.author;
+        
+        //This will put the quote on the page in the id="inspirationQuote" p tag in the inspiration-quote-container
+        quoteAuthor.innerHTML = data.author;
     })
 }
-
-// //Create a variable to link to the inspirational quote div in HTML
-// var inspirationQuote = document.querySelector("#inspirationQuote");
-
-
-// var getQuoteInfo = function(event) {
-//    console.log(event);
-//     //Sets up the connection between ZenQuotes API (pulling the quote of the day)
-//     fetch ("https://zenquotes.io/api/today")
-//     .then(function(response) {
-//         console.log(response);
-//         if (response.ok) {
-//             response.json().then(function(data) {
-//                 console.log(data);
-//                 displayQuoteInfo(data);
-//             });
-//         } else {
-//             alert("Error, please select the Quote of the Day Button");
-//             }
-//     })
-//     .catch(function(error) {
-//         alert("Unable to connect to ZenQuotes");
-//     });
-// }
-
-// inspirationQuote.addEventListener('submit', getQuoteInfo);
-
 
