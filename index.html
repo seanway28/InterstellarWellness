@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- UIkit CSS -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.22/dist/css/uikit.min.css" />
-<link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.22/dist/css/uikit.min.css" />
+    <link rel="stylesheet" href="./assets/css/style.css">
     <title>Interstellar Wellness </title>
 </head>
+
 <body>
     <div class="container">
         <!-- Heading and Date -->
@@ -81,9 +82,24 @@
 
         <!-- Inspiration -->
         <section>
-            <h1></h1>
-            <!-- Quote container -->
-            <div class="inspiration-quote" id="inspirationQuote"><p></p></div>
+            
+            <!--Quote Container-->
+            <div class="inspiration-quote-container">
+                <!--Title of the Section-->
+                <h1>Inspirational Quote of the Day</h1>
+                <!--This is where the Quote will Populate-->
+                <p id="inspirationQuote"></p>
+                <!--This is where the Author will Populate-->
+                <p id="inspirationQuoteAuthor"></p>
+                <!--This will allow the user to get a new quote whenever the button is clicked-->
+                <button id="quoteBtn" class="uk-button uk-button-primary">Get New Quote</button>
+            </div>
+
+            <!--Photo Container-->
+            <div class="inspiration-quote-image">
+
+            </div>
+
         </section>
 
         <!-- Meditation -->
@@ -102,8 +118,20 @@
         </section>
     </div>
    
+    
+    <!--Links to jQuery-->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    
+    <!--Links to Moment-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.22/dist/js/uikit.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.22/dist/js/uikit-icons.min.js"></script>
+    
+    <!--Links to external script.js-->
     <script src="./assets/js/script.js"></script>
+    <!--Links to external Inspirational Quote Javascript-->
+    <script src="assets/js/quote.js"></script>
+    
 </body>
 </html>
