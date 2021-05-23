@@ -10,8 +10,8 @@
 </head>
 
 <body>
-    <div class="container">
-        <!-- Heading and Date -->
+    <div class="container">Date
+        <!-- Heading and  -->
         <header>
             <!-- Triangle/figure -->
             <div></div>
@@ -93,6 +93,16 @@
                 <p id="inspirationQuoteAuthor"></p>
                 <!--This will allow the user to get a new quote whenever the button is clicked-->
                 <button id="quoteBtn" class="uk-button uk-button-primary">Get New Quote</button>
+                <button id="videoBtn" class="uk-button uk-button-primary" onclick="getVideo()">View a Video</button>
+
+                <label for="wellness-videos">Choose a video:</label>
+                <select name="wellness-videos" id="video">
+                    <option value="general wellness">general wellness</option>
+                    <option value="guided meditation">guided meditation</option>
+                    <option value="yoga">yoga</option>
+                
+                </select>
+
             </div>
 
             <!--Photo Container-->
@@ -100,6 +110,12 @@
 
             </div>
 
+
+            <div class="wellness-videos">
+                <iframe src=""></iframe>
+                <h3>Video Title</h3>
+                <p class="description">Video Description<p>
+            </div>
         </section>
 
         <!-- Meditation -->
@@ -131,7 +147,8 @@
     <!--Links to external script.js-->
     <script src="./assets/js/script.js"></script>
     <!--Links to external Inspirational Quote Javascript-->
-    <script src="assets/js/quote.js"></script>
-    
+    <script src="./assets/js/quote.js"></script>
+    <!--Links to Yoga and Medititation-->
+    <script src="./assets/js/videos.js"></script>
 </body>
 </html>
