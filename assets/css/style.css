@@ -1,8 +1,8 @@
-* {
+/* * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-}
+} */
 /* Common Colors */
 :root {
   --light-green: #c8dcc9; /*background*/
@@ -33,7 +33,6 @@ section {
   padding: 60px;
   height: 100vh;
   position: relative;
-  border-bottom: 4px coral solid;
 }
 
 header {
@@ -142,39 +141,33 @@ header h1 {
   width: 30vh;
   height: 30vh;
   border-radius: 50%;
-  background-image: url("../images/robot-gladiator.jpg");
+  background-image: url("../images/horoscope.svg");
 }
 
 #selection-2 {
   width: 30vh;
   height: 30vh;
   border-radius: 50%;
-  background-image: url("/assets/images/fan-page.jpg");
-  left: 32%;
-  bottom: 5%;
+  background-image: url("/assets/images/inspiration.svg");
 }
 
 #selection-3 {
   width: 30vh;
   height: 30vh;
   border-radius: 50%;
-  background-image: url("/assets/images/horiseon-screenshot.png");
-  left: 43%;
-  top: 18%;
+  background-image: url("/assets/images/meditation.svg");
 }
 
 #selection-4 {
   width: 30vh;
   height: 30vh;
   border-radius: 50%;
-  background-image: url("/assets/images/run-buddy.png");
-  right: 1%;
-  bottom: 3%;
+  background-image: url("/assets/images/journal.svg");
 }
 /* Selections End */
 
 /* Horoscope Section */
-#horoscope h3 {
+#horoscopeSection h3 {
   font-family: Monarch;
   font-size: 6.5vh;
   color: #505c19;
@@ -214,3 +207,45 @@ header h1 {
   background-color: var(--lighter-green);
   width: 50%;
 }
+/* End of Horoscope Section */
+
+/* Inspirational Section */
+#inspirationSection h1 {
+  font-size: 9vh;
+  font-family: Smoothy;
+  color: #505c19;
+}
+.inspiration-quote {
+  font-size: 3vh;
+  font-family: Monarch;
+  color: #505c19;
+  background-color: var(--lighter-green);
+  width: 80%;
+  text-align: center;
+}
+/* End of Inspirational Section */
+
+/* Meditation Section */
+#meditateSection h1 {
+  font-size: 9vh;
+  font-family: Smoothy;
+  color: #505c19;
+}
+
+/* End of Meditation Section */
+
+/* Journal Section */
+#journalSection h1 {
+  font-size: 9vh;
+  font-family: Smoothy;
+  color: #505c19;
+}
+textarea {
+  font-size: 3vh;
+  font-family: Monarch;
+  color: #505c19;
+  background-color: var(--lighter-green);
+  width: 80%;
+  text-align: left;
+}
+/* End of Journal Section */

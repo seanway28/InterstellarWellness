@@ -33,7 +33,7 @@
             <div uk-grid class="space"> 
                 <!-- Horoscope -->
                 <div class="container">
-                    <a href="#horoscope">
+                    <a href="#horoscopeSection">
                         <div id="selection-1"  class="image" >
     
                         <div class="overlay" id="overlay-1">Horoscope</div>
@@ -43,7 +43,7 @@
                 </div>
                 <!-- Inspiration -->
                 <div class="container">
-                    <a href="#inspiration">
+                    <a href="#inspirationSection">
                          <div id="selection-2" class="image" >
     
                     <div class="overlay" id="overlay-2">Inspiration</div>
@@ -53,7 +53,7 @@
                 </div>
                 <!-- Meditation -->
                 <div class="container">
-                    <a href="#meditation">
+                    <a href="#meditateSection">
                         <div id="selection-3" class="image">
     
                     <div class="overlay" id="overlay-3">Meditation</div>
@@ -63,7 +63,7 @@
                 </div>
                 <!-- Journaling -->
                 <div class="container">
-                    <a href="journaling">
+                    <a href="#journalSection">
                         <div id="selection-4" class="image" >
                     <div class="overlay" id="overlay-4">Journaling</div>
                 </div>
@@ -74,7 +74,7 @@
         </section>
 
         <!-- Horoscope Section-->
-        <section id="horoscope">
+        <section id="horoscopeSection">
             <!-- Birthday Selection -->
             <div>
                 <h3>Birthday:</h3>
@@ -93,7 +93,7 @@
             </div>
 
             <!-- Other Horoscope Dates -->
-            <div class=".uk-column-1-2 .other-horoscopes">
+            <div uk-grid class=".other-horoscopes">
                 <!-- Tomorrow -->
                 <div>
                     <h3>Tomorrow</h3>
@@ -109,22 +109,22 @@
         </section>
 
         <!-- Inspiration -->
-        <section>
-            <h1></h1>
+        <section id="inspirationSection">
+            <h1>Be Inspired</h1>
             <!-- Quote container -->
-            <div class="inspiration-quote" id="inspirationQuote"><p></p></div>
+            <div class="inspiration-quote" id="inspirationQuote"><p>quote here</p></div>
         </section>
 
         <!-- Meditation -->
-        <section>
-            <h1></h1>
+        <section id="meditateSection">
+            <h1>Find Inner Peace</h1>
             <!-- Video container -->
             <div class="meditation" id="meditationVideo"></div>
         </section>
 
         <!-- Journaling -->
-        <section>
-            <h1></h1>
+        <section id="journalSection">
+            <h1>Journal</h1>
             <div class="journal" id="journalArea">
                 <textarea name="journaling" id="journal-text" cols="30" rows="10"></textarea>
             </div>
