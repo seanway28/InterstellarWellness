@@ -1,6 +1,21 @@
+//Creates our constants to link from the Javascript file to the HTML
 const quote = document.querySelector("#quote");
 const author = document.querySelector("#author");
 const quoteBtn = document.querySelector("#quoteBtn");
+
+//Event Listener for when User presses "New Quote" Btn
+quoteBtn.addEventListener("click", getQuote);
+
+//Function to Get Quote
+function getQuote() {
+    fetch("https://quotable.io/random")
+    //.then(res => console.log(res.json()))
+    .then (res => res.json())
+    .then(data => {
+        quote.innerHTML = data.content;
+        author.innerHTML = data.author;
+    })
+}
 
 // //Create a variable to link to the inspirational quote div in HTML
 // var inspirationQuote = document.querySelector("#inspirationQuote");
