@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- UIkit CSS -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.22/dist/css/uikit.min.css" />
-<link rel="stylesheet" href="./assets/css/style.css">
-    <title>Interstellar Wellness</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.22/dist/css/uikit.min.css" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Interstellar Wellness </title>
 </head>
+
 <body>
     <div class="container">
         <!-- Heading and Date -->
@@ -108,18 +109,46 @@
             </div>
         </section>
 
-        <!-- Inspiration -->
-        <section id="inspirationSection">
-            <h1>Be Inspired</h1>
-            <!-- Quote container -->
-            <div class="inspiration-quote" id="inspirationQuote"><p>quote here</p></div>
+    
+            <!--Inspirational Quote Container-->
+            <section id="inspirationSection">
+                <!--Title of the Section-->
+                <h1>Be Inspired</h1>
+                <!--This is where the Quote will Populate-->
+                <p class="inspiration-quote" id="inspirationQuote"></p>
+                <!--This is where the Author will Populate-->
+                <p class="inspiration-quote" id="inspirationQuoteAuthor"></p>
+                <!--This will allow the user to get a new quote whenever the button is clicked-->
+                <button id="quoteBtn" class="uk-button uk-button-primary">Get New Quote</button>
+                
+
+
+             <section>
+
+            <!--Photo Container-->
+            <div class="inspiration-quote-image">
+
+            </div>
+
         </section>
 
         <!-- Meditation -->
-        <section id="meditateSection">
+        <section id="meditateSection" class="wellness-videos">
             <h1>Find Inner Peace</h1>
+            <button id="videoBtn" class="uk-button uk-button-primary" onclick="getVideo()">View a Video</button>
+            <label for="wellness-videos">Choose a video:</label>
+                <select name="wellness-videos" id="video">
+                    <option value="general wellness">general wellness</option>
+                    <option value="guided meditation">guided meditation</option>
+                    <option value="yoga">yoga</option>
+                
+                </select>
             <!-- Video container -->
-            <div class="meditation" id="meditationVideo"></div>
+            <div class="meditation" id="meditationVideo">
+                <iframe src=""></iframe>
+                <h3 id="videoTitle">Video Title</h3>
+                <p class="description">Video Description<p></p>
+            </div>
         </section>
 
         <!-- Journaling -->
@@ -131,10 +160,23 @@
         </section>
     </div>
    
+    
+    <!--Links to jQuery-->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    
+    <!--Links to Moment-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.22/dist/js/uikit.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.22/dist/js/uikit-icons.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <!--Links to external script.js-->
     <script src="./assets/js/script.js"></script>
+    <!--Links to external Inspirational Quote Javascript-->
+    <script src="./assets/js/quote.js"></script>
+    <!--Links to Yoga and Medititation-->
+    <script src="./assets/js/videos.js"></script>
 </body>
 </html>
