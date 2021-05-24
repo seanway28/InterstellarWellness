@@ -9,3 +9,5 @@ Random Quotes API https://github.com/lukePeavey/quotable
 Public API List https://github.com/davemachado/public-api
 Rapid API Free List https://rapidapi.com/collection/list-of-free-apis
 
+Input Text Value Property
+https://www.w3schools.com/jsref/prop_text_value.asp
