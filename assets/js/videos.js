@@ -18,7 +18,7 @@ function getVideo() {
         var index = Math.floor(Math.random() * (max - min)) + min;
 
         $('iframe').attr('src', 'https://www.youtube.com/embed/' + data.items[index].id.videoId)
-        $('h3').text(data.items[index].snippet.title)
+        $('#videoTitle').text(data.items[index].snippet.title)
         $('.description').text(data.items[index].snippet.description)
       },
       error: function(response){
