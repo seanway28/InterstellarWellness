@@ -2,6 +2,12 @@
 
 //Pull Today's horoscope based on the sun sign
 
-//Display Today's horoscop in div id=todaysHoroscope
+//Display Today's horoscope in div id=todaysHoroscope
 
-//Pull 
+//Pull This Week's Horoscope based on the sun sign
+
+//Display this week's horoscope
+
+//PUll this month's horoscope based on sun sign
+
+//Display this month's horoscope
