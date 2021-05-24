@@ -95,16 +95,16 @@
 
             <!-- Other Horoscope Dates -->
             <div uk-grid class=".other-horoscopes">
-                <!-- Tomorrow -->
-                <div>
-                    <h3>Tomorrow</h3>
-                    <div class="tomorrow" id="tomorrowHoroscope"><p>text</p></div>
-                </div>
-
                 <!-- This Week -->
                 <div>
                     <h3>This Week</h3>
                     <div class="week" id="weekHoroscope"><p>text</p></div>
+                </div>
+
+                <!-- This Month -->
+                <div>
+                    <h3>This Month</h3>
+                    <div class="week" id="monthHoroscope"><p>text</p></div>
                 </div>
             </div>
         </section>
@@ -114,12 +114,15 @@
             <section id="inspirationSection">
                 <!--Title of the Section-->
                 <h1>Be Inspired</h1>
-                <!--This is where the Quote will Populate-->
-                <p class="inspiration-quote" id="inspirationQuote"></p>
+                <div class="inspiration-quote" > 
+                    <!--This is where the Quote will Populate-->
+                <p id="inspirationQuote"></p>
                 <!--This is where the Author will Populate-->
-                <p class="inspiration-quote" id="inspirationQuoteAuthor"></p>
+                <p id="inspirationQuoteAuthor"></p>
+                </div>
+                
                 <!--This will allow the user to get a new quote whenever the button is clicked-->
-                <button id="quoteBtn" class="uk-button uk-button-primary">Get New Quote</button>
+                <button id="quoteBtn" class="uk-button button">Get New Quote</button>
                 
 
 
@@ -135,12 +138,12 @@
         <!-- Meditation -->
         <section id="meditateSection" class="wellness-videos">
             <h1>Find Inner Peace</h1>
-            <button id="videoBtn" class="uk-button uk-button-primary" onclick="getVideo()">View a Video</button>
-            <label for="wellness-videos">Choose a video:</label>
-                <select name="wellness-videos" id="video">
-                    <option value="general wellness">general wellness</option>
-                    <option value="guided meditation">guided meditation</option>
-                    <option value="yoga">yoga</option>
+            <button id="videoBtn" class="uk-button button" onclick="getVideo()">View a Video</button>
+            <label class="label" for="wellness-videos">Choose a video:</label>
+                <select class="button" name="wellness-videos" id="video">
+                    <option value="general wellness">General Wellness</option>
+                    <option value="guided meditation">Guided Meditation</option>
+                    <option value="yoga">Yoga</option>
                 
                 </select>
             <!-- Video container -->

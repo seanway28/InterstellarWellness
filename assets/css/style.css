@@ -57,6 +57,17 @@ header {
   margin-left: 40px;
 }
 
+.button {
+  background-color: var(--brown);
+  color: var(--lighter-gray);
+  font-family: Monarch;
+}
+
+.label {
+  color: var(--forest-green);
+  font-family: Monarch;
+}
+
 header h1 {
   font-size: 10vh;
   font-family: Smoothy;
@@ -67,12 +78,6 @@ header h1 {
   font-size: 5vh;
   font-family: Monarch;
 }
-
-/* .line {
-  width: 15%;
-  border: 5px #f3f5f5 solid;
-  border-radius: 20px;
-} */
 
 #feel h1 {
   font-family: Monarch;
@@ -148,21 +153,21 @@ header h1 {
   width: 30vh;
   height: 30vh;
   border-radius: 50%;
-  background-image: url("/assets/images/inspiration.svg");
+  background-image: url("../images/inspiration.svg");
 }
 
 #selection-3 {
   width: 30vh;
   height: 30vh;
   border-radius: 50%;
-  background-image: url("/assets/images/meditation.svg");
+  background-image: url("../images/meditation.svg");
 }
 
 #selection-4 {
   width: 30vh;
   height: 30vh;
   border-radius: 50%;
-  background-image: url("/assets/images/journal.svg");
+  background-image: url("../images/journal.svg");
 }
 /* Selections End */
 
@@ -230,6 +235,18 @@ header h1 {
   font-size: 9vh;
   font-family: Smoothy;
   color: #505c19;
+}
+
+#videoTitle {
+  font-family: Monarch;
+  color: #505c19;
+  font-size: 6vh;
+}
+
+.description {
+  font-family: Monarch;
+  color: var(--brown);
+  font-size: 3.4vh;
 }
 
 /* End of Meditation Section */
