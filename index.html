@@ -14,42 +14,71 @@
         <!-- Heading and Date -->
         <header>
             <!-- Triangle/figure -->
-            <div></div>
-
+                <div class="arrow-up"></div>
+        
             <!-- Heading -->
-            <h1></h1>
+            <h1>Interstellar Wellness</h1>
 
             <!-- Date -->
-            <h2 id="todaysDate"></h2>
+            <h2 id="todaysDate" class="todays-date"></h2>
+
+            <span class="line"></span>
         </header>
         <!-- End of Header -->
 
 
         <!-- What do you feel like for today? -->
-        <section>
-            <h1></h1>
+        <section id="feel">
+            <h1>What do you feel like for today?</h1>
             <!-- Choices -->
-            <div class=".uk-column-1-4"> 
+            <div uk-grid class="space"> 
                 <!-- Horoscope -->
-               <div></div>
-
-               <!-- Inspiration -->
-               <div></div>
-
-               <!-- Motivation -->
-               <div></div>
-
-               <!-- Journaling -->
-               <div></div>
+                <div class="container">
+                    <a href="#horoscopeSection">
+                        <div id="selection-1"  class="image" >
+    
+                        <div class="overlay" id="overlay-1">Horoscope</div>
+                    </div>
+                    </a>
+                    
+                </div>
+                <!-- Inspiration -->
+                <div class="container">
+                    <a href="#inspirationSection">
+                         <div id="selection-2" class="image" >
+    
+                    <div class="overlay" id="overlay-2">Inspiration</div>
+                </div>
+                </a>
+    
+                </div>
+                <!-- Meditation -->
+                <div class="container">
+                    <a href="#meditateSection">
+                        <div id="selection-3" class="image">
+    
+                    <div class="overlay" id="overlay-3">Meditation</div>
+                    </div>
+                </a>
+    
+                </div>
+                <!-- Journaling -->
+                <div class="container">
+                    <a href="#journalSection">
+                        <div id="selection-4" class="image" >
+                    <div class="overlay" id="overlay-4">Journaling</div>
+                </div>
+            </a>
+                </div>
             </div>
 
         </section>
 
-        <!-- Horoscope -->
-        <section>
+        <!-- Horoscope Section-->
+        <section id="horoscopeSection">
             <!-- Birthday Selection -->
             <div>
-                <h3></h3>
+                <h3>Birthday:</h3>
                 <!-- Date of Birth Form -->
                 <form>
                     <div class="form-group">
@@ -59,41 +88,42 @@
             </div>
 
             <!-- Today's Horoscope -->
-            <div>
-                <h2></h2>
+            <div id="todaysHorHeading">
+                <h2>Today's [Zodiac] Horoscope</h2>
                 <div class="today" id="todaysHoroscope"><p>text</p></div>
             </div>
 
             <!-- Other Horoscope Dates -->
-            <div class=".uk-column-1-2">
+            <div uk-grid class=".other-horoscopes">
                 <!-- Tomorrow -->
                 <div>
-                    <h3></h3>
-                    <div class="tomorrow" id="tomorrowHoroscope"><p></p></div>
+                    <h3>Tomorrow</h3>
+                    <div class="tomorrow" id="tomorrowHoroscope"><p>text</p></div>
                 </div>
 
                 <!-- This Week -->
                 <div>
-                    <h3></h3>
-                    <div class="week" id="weekHoroscope"><p></p></div>
+                    <h3>This Week</h3>
+                    <div class="week" id="weekHoroscope"><p>text</p></div>
                 </div>
             </div>
         </section>
 
-        <!-- Inspiration -->
-        <section>
-            
-            <!--Quote Container-->
-            <div class="inspiration-quote-container">
+    
+            <!--Inspirational Quote Container-->
+            <section id="inspirationSection">
                 <!--Title of the Section-->
-                <h1>Inspirational Quote of the Day</h1>
+                <h1>Be Inspired</h1>
                 <!--This is where the Quote will Populate-->
-                <p id="inspirationQuote"></p>
+                <p class="inspiration-quote" id="inspirationQuote"></p>
                 <!--This is where the Author will Populate-->
-                <p id="inspirationQuoteAuthor"></p>
+                <p class="inspiration-quote" id="inspirationQuoteAuthor"></p>
                 <!--This will allow the user to get a new quote whenever the button is clicked-->
                 <button id="quoteBtn" class="uk-button uk-button-primary">Get New Quote</button>
-            </div>
+                
+
+
+             <section>
 
             <!--Photo Container-->
             <div class="inspiration-quote-image">
@@ -103,13 +133,26 @@
         </section>
 
         <!-- Meditation -->
-        <section>
-            <h1></h1>
+        <section id="meditateSection" class="wellness-videos">
+            <h1>Find Inner Peace</h1>
+            <button id="videoBtn" class="uk-button uk-button-primary" onclick="getVideo()">View a Video</button>
+            <label for="wellness-videos">Choose a video:</label>
+                <select name="wellness-videos" id="video">
+                    <option value="general wellness">general wellness</option>
+                    <option value="guided meditation">guided meditation</option>
+                    <option value="yoga">yoga</option>
+                
+                </select>
             <!-- Video container -->
-            <div class="meditation" id="meditationVideo"></div>
+            <div class="meditation" id="meditationVideo">
+                <iframe src=""></iframe>
+                <h3 id="videoTitle">Video Title</h3>
+                <p class="description">Video Description<p></p>
+            </div>
         </section>
 
         <!-- Journaling -->
+<<<<<<< HEAD
         <section>
             <div class="journal-container">
                 <!--Title of the Section-->
@@ -120,6 +163,10 @@
                 <button id="journalPromptBtn" class="uk-button uk-button-primary">Daily Journal Prompt</button>
             </div>
             <!--This is where the user will Enter their Journal Entry-->
+=======
+        <section id="journalSection">
+            <h1>Journal</h1>
+>>>>>>> 69d50f0c5e84f4a054371b707825dbac2d2415a0
             <div class="journal" id="journalArea">
                 <!--Text area for the user-->
                 <textarea name="journaling" id="journal-text" cols="30" rows="10"></textarea>
@@ -137,13 +184,21 @@
     
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.22/dist/js/uikit.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.22/dist/js/uikit-icons.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     
     <!--Links to external script.js-->
     <script src="./assets/js/script.js"></script>
     <!--Links to external Inspirational Quote Javascript-->
+<<<<<<< HEAD
     <script src="assets/js/quote.js"></script>
     <!--Links to external Journal Entry Javascript File-->
     <script src="assets/js/journal.js"></script>
     
+=======
+    <script src="./assets/js/quote.js"></script>
+    <!--Links to Yoga and Medititation-->
+    <script src="./assets/js/videos.js"></script>
+>>>>>>> 69d50f0c5e84f4a054371b707825dbac2d2415a0
 </body>
 </html>

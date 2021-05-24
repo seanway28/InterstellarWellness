@@ -1,8 +1,14 @@
+/* * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+} */
+/* Common Colors */
 :root {
   --light-green: #c8dcc9; /*background*/
   --lighter-gray: #f3f5f5;
   --white: #ffffff;
-  -navy-blue: #184e77;
+  --navy-blue: #184e77;
   --dark-gray: #444647;
   --olive-green: #b3be8d; /* today's horoscope text-box*/
   --lighter-green: #dceab2; /* text-box for tomorrow and this week*/
@@ -11,3 +17,235 @@
   --light-gray: #707070;
   --natural-green: #a4a98b;
 }
+
+/* Common Fonts */
+@font-face {
+  font-family: Smoothy;
+  src: url(./Smoothy.otf);
+}
+@font-face {
+  font-family: Monarch;
+  src: url(./Monarch.otf);
+}
+
+section {
+  background-color: var(--light-green);
+  padding: 60px;
+  height: 100vh;
+  position: relative;
+}
+
+header {
+  background-color: var(--light-green);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  z-index: 9999;
+  border-bottom: 4px #f3f5f5 solid;
+}
+
+.arrow-up {
+  width: 0;
+  height: 0;
+  border-left: 80px solid transparent;
+  border-right: 80px solid transparent;
+  border-bottom: 86.6px solid #836e6c;
+  margin-top: 8px;
+  margin-left: 40px;
+}
+
+header h1 {
+  font-size: 10vh;
+  font-family: Smoothy;
+  color: var(--forest-green);
+}
+
+.todays-date {
+  font-size: 5vh;
+  font-family: Monarch;
+}
+
+/* .line {
+  width: 15%;
+  border: 5px #f3f5f5 solid;
+  border-radius: 20px;
+} */
+
+#feel h1 {
+  font-family: Monarch;
+  color: var(--forest-green);
+  font-size: 9vh;
+}
+
+/* Title Overlay */
+
+.image {
+  border-radius: 50%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+}
+
+.overlay {
+  display: flex;
+  background: rgb(164, 169, 139);
+  background: rgba(164, 169, 139, 0.5); /* Black see-through */
+  color: var(--forest-green);
+  transition: 0.5s ease;
+  font-family: Smoothy;
+  opacity: 0;
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+#overlay-1 {
+  font-size: 8vh;
+}
+
+#overlay-2 {
+  font-size: 7.6vh;
+  /* padding: 10px; */
+}
+
+#overlay-3 {
+  font-size: 8vh;
+}
+#overlay-4 {
+  font-size: 7.5vh;
+  /* width: 100%; */
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+/* End of Overlay */
+
+/* Beginning of Selections */
+.thumbnails {
+  width: 100%;
+}
+
+.space {
+  justify-content: space-between;
+  margin-top: 22vh;
+}
+
+#selection-1 {
+  width: 30vh;
+  height: 30vh;
+  border-radius: 50%;
+  background-image: url("../images/horoscope.svg");
+}
+
+#selection-2 {
+  width: 30vh;
+  height: 30vh;
+  border-radius: 50%;
+  background-image: url("/assets/images/inspiration.svg");
+}
+
+#selection-3 {
+  width: 30vh;
+  height: 30vh;
+  border-radius: 50%;
+  background-image: url("/assets/images/meditation.svg");
+}
+
+#selection-4 {
+  width: 30vh;
+  height: 30vh;
+  border-radius: 50%;
+  background-image: url("/assets/images/journal.svg");
+}
+/* Selections End */
+
+/* Horoscope Section */
+#horoscopeSection h3 {
+  font-family: Monarch;
+  font-size: 6.5vh;
+  color: #505c19;
+}
+.form-control {
+  width: 25vh;
+  height: 5vh;
+  text-align: center;
+}
+
+#todaysHorHeading {
+  margin-left: 29vh;
+}
+
+#todaysHorHeading h2 {
+  font-family: Monarch;
+  font-size: 6.5vh;
+  color: #505c19;
+}
+
+#todaysHoroscope {
+  font-size: 3vh;
+  font-family: Monarch;
+  color: #505c19;
+  background-color: var(--olive-green);
+  width: 80%;
+  text-align: center;
+}
+
+.other-horoscopes {
+  display: flex;
+  justify-content: space-between;
+}
+
+#tomorrowHoroscope,
+#weekHoroscope {
+  background-color: var(--lighter-green);
+  width: 50%;
+}
+/* End of Horoscope Section */
+
+/* Inspirational Section */
+#inspirationSection h1 {
+  font-size: 9vh;
+  font-family: Smoothy;
+  color: #505c19;
+}
+.inspiration-quote {
+  font-size: 3vh;
+  font-family: Monarch;
+  color: #505c19;
+  background-color: var(--lighter-green);
+  width: 80%;
+  text-align: center;
+}
+/* End of Inspirational Section */
+
+/* Meditation Section */
+#meditateSection h1 {
+  font-size: 9vh;
+  font-family: Smoothy;
+  color: #505c19;
+}
+
+/* End of Meditation Section */
+
+/* Journal Section */
+#journalSection h1 {
+  font-size: 9vh;
+  font-family: Smoothy;
+  color: #505c19;
+}
+textarea {
+  font-size: 3vh;
+  font-family: Monarch;
+  color: #505c19;
+  background-color: var(--lighter-green);
+  width: 80%;
+  text-align: left;
+}
+/* End of Journal Section */
