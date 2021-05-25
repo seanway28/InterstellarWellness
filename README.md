@@ -11,3 +11,7 @@ Rapid API Free List https://rapidapi.com/collection/list-of-free-apis
 
 Input Text Value Property
 https://www.w3schools.com/jsref/prop_text_value.asp
+
+Date Manipulation
+https://www.toptal.com/software/definitive-guide-to-datetime-manipulation
+

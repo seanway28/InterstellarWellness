@@ -20,7 +20,7 @@
             <h1>Interstellar Wellness</h1>
 
             <!-- Date -->
-            <h2 id="todaysDate" class="todays-date"></h2>
+            <div id="todaysDate" class="todays-date"></div>
 
             <span class="line"></span>
         </header>
@@ -76,35 +76,34 @@
 
         <!-- Horoscope Section-->
         <section id="horoscopeSection">
-            <!-- Birthday Selection -->
             <div>
                 <h3>Birthday:</h3>
-                <!-- Date of Birth Form -->
-                <form>
+                 Date of Birth Form
+                <form id='my-form'>
                     <div class="form-group">
-                        <input type="text" class="form-control" placeholder="MM/DD" id="dateofBirth" autocomplete="off">
+                        <input type="text" class="form-control" placeholder="MM/DD" id="dateofBirth">
                       </div>
                 </form>
             </div>
 
             <!-- Today's Horoscope -->
             <div id="todaysHorHeading">
-                <h2>Today's [Zodiac] Horoscope</h2>
+                <h2>Today's <span id="usersSign"></span> Horoscope</h2>
                 <div class="today" id="todaysHoroscope"><p>text</p></div>
             </div>
 
             <!-- Other Horoscope Dates -->
             <div uk-grid class=".other-horoscopes">
-                <!-- Tomorrow -->
-                <div>
-                    <h3>Tomorrow</h3>
-                    <div class="tomorrow" id="tomorrowHoroscope"><p>text</p></div>
-                </div>
-
                 <!-- This Week -->
                 <div>
-                    <h3>This Week</h3>
-                    <div class="week" id="weekHoroscope"><p>text</p></div>
+                    <h3>Compatibility Sign</h3>
+                    <div class="week" id="compatibilitySign"><p>text</p></div>
+                </div>
+
+                <!-- This Month -->
+                <div>
+                    <h3>This Month</h3>
+                    <div class="week" id="monthHoroscope"><p>text</p></div>
                 </div>
             </div>
         </section>
@@ -114,33 +113,36 @@
             <section id="inspirationSection">
                 <!--Title of the Section-->
                 <h1>Be Inspired</h1>
-                <!--This is where the Quote will Populate-->
-                <p class="inspiration-quote" id="inspirationQuote"></p>
+                <div class="inspiration-quote" > 
+                    <!--This is where the Quote will Populate-->
+                <p id="inspirationQuote"></p>
                 <!--This is where the Author will Populate-->
-                <p class="inspiration-quote" id="inspirationQuoteAuthor"></p>
+                <p id="inspirationQuoteAuthor"></p>
+                </div>
+                
                 <!--This will allow the user to get a new quote whenever the button is clicked-->
-                <button id="quoteBtn" class="uk-button uk-button-primary">Get New Quote</button>
+                <button id="quoteBtn" class="uk-button button">Get New Quote</button>
                 
 
-
-             <section>
+            </section>
+            <section>
 
             <!--Photo Container-->
             <div class="inspiration-quote-image">
 
             </div>
 
-        </section>
+            </section>
 
         <!-- Meditation -->
-        <section id="meditateSection" class="wellness-videos">
+        <section id="meditateSection" class="wellness-video">
             <h1>Find Inner Peace</h1>
-            <button id="videoBtn" class="uk-button uk-button-primary" onclick="getVideo()">View a Video</button>
-            <label for="wellness-videos">Choose a video:</label>
-                <select name="wellness-videos" id="video">
-                    <option value="general wellness">general wellness</option>
-                    <option value="guided meditation">guided meditation</option>
-                    <option value="yoga">yoga</option>
+            <button id="videoBtn" class="uk-button button" onclick="getVideo()">View a Video</button>
+            <label class="label" for="wellness-videos">Choose a video:</label>
+                <select class="button" name="wellness-videos" id="video">
+                    <option value="general wellness">General Wellness</option>
+                    <option value="guided meditation">Guided Meditation</option>
+                    <option value="yoga">Yoga</option>
                 
                 </select>
             <!-- Video container -->
@@ -152,7 +154,6 @@
         </section>
 
         <!-- Journaling -->
-<<<<<<< HEAD
         <section>
             <div class="journal-container">
                 <!--Title of the Section-->
@@ -161,16 +162,6 @@
                 <p id="journalPrompt"></p>
                 <!--This will allow the user to get a new journal prompt whenever the button is clicked-->
                 <button id="journalPromptBtn" class="uk-button uk-button-primary">Daily Journal Prompt</button>
-            </div>
-            <!--This is where the user will Enter their Journal Entry-->
-=======
-        <section id="journalSection">
-            <h1>Journal</h1>
->>>>>>> 69d50f0c5e84f4a054371b707825dbac2d2415a0
-            <div class="journal" id="journalArea">
-                <!--Text area for the user-->
-                <textarea name="journaling" id="journal-text" cols="30" rows="10"></textarea>
-                <button id="journalBtn" class="uk-button uk-button-primary">Save Journal Entry</button>
             </div>
         </section>
     </div>
@@ -190,15 +181,12 @@
     <!--Links to external script.js-->
     <script src="./assets/js/script.js"></script>
     <!--Links to external Inspirational Quote Javascript-->
-<<<<<<< HEAD
     <script src="assets/js/quote.js"></script>
     <!--Links to external Journal Entry Javascript File-->
     <script src="assets/js/journal.js"></script>
-    
-=======
-    <script src="./assets/js/quote.js"></script>
     <!--Links to Yoga and Medititation-->
     <script src="./assets/js/videos.js"></script>
->>>>>>> 69d50f0c5e84f4a054371b707825dbac2d2415a0
+    <!--Links to external Horoscope Javascript File-->
+    <script src="assets/js/horoscope.js"></script>
 </body>
 </html>

@@ -19,7 +19,7 @@ function getQuote(){
     .then(res => res.json())
     .then(data => {
         //This will put the quote on the page in the id="inspirationQuote" p tag in the inspiration-quote-container
-        quote.innerHTML = data.content;
+        quote.innerHTML = '"' + data.content + '"';
         
         //This will put the quote on the page in the id="inspirationQuote" p tag in the inspiration-quote-container
         quoteAuthor.innerHTML = data.author;
