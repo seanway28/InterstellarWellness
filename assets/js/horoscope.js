@@ -14,12 +14,19 @@ var formSubmitHander = function(event) {
     //const birthday = document.getElementById('userBirthday').value;
     const splitBirthday = birthday.split('/');
     console.log(splitBirthday);
+    //Pulls out the month from the user's birthday
     let month = splitBirthday[0];
     console.log(month);
+    //Pulls out the day of the user's birthday
     let day = splitBirthday[1];
     console.log(day);
+
+    //This is going to be used to get our sunSignNumber to use to determine the user's zodiac sign
     var monthHundred = month*100;
     console.log('monthHundred:', monthHundred);
+    
+    //THIS IS WHERE I NEED HELP
+    //I NEED THIS TO RETURN A VALUE
     var sunSignNumber = month + day;
     console.log('Date Conversion:', sunSignNumber);
 
