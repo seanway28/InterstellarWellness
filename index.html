@@ -79,14 +79,9 @@
             <div>
                 <h3>Birthday:</h3>
                  Date of Birth Form
-                <form id="birthdayMonthForm">
+                <form id="birthdayForm">
                     <div class="form-group">
-                        <input type="text" class="form-control" placeholder="MM" id="month">    
-                    </div>
-                </form>
-                <form id="birthdayDayForm">
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="DD" id="day">    
+                        <input type="text" class="form-control" placeholder="MM/DD" id="userBirthday">    
                     </div>
                 </form>
             </div>
@@ -110,6 +105,7 @@
                     <h3>Lucky Time of the Day</h3>
                     <div class="week" id="luckyTime"><p>text</p></div>
                 </div>
+            
             </div>
         </section>
 
@@ -156,7 +152,7 @@
         </section>
 
         <!-- Journaling -->
-        <section>
+        <section id="journalSection">
             <div class="journal-container">
                 <!--Title of the Section-->
                 <h1>Daily Journal Entry</h1>
@@ -164,6 +160,11 @@
                 <p id="journalPrompt"></p>
                 <!--This will allow the user to get a new journal prompt whenever the button is clicked-->
                 <button id="journalPromptBtn" class="uk-button uk-button-primary">Daily Journal Prompt</button>
+            </div>
+            <!-- This is where the user will Enter their Journal Entry-->
+            <div class="journal" id="journalArea">
+                <textarea name="journaling" id="journal-text" cols="30" rows="10"></textarea>
+                <button id="journalBtn" class="uk-button uk-button-primary">Save Journal Entry</button>
             </div>
         </section>
     </div>
