@@ -88,12 +88,42 @@ function getSunSign (){
 	}
 }
 
+//document.getElementById("userSign").innerHTML = userSign; 
 
 $.ajax({
     type:'POST',
-    url:'https://aztro.sameerkumar.website?sign=' +  + '&day=today',
+    url:'https://aztro.sameerkumar.website?sign=aries&day=today',
     success:function(data){
     console.log(data);
+    
+    //I coded all the features, all you would need to do is add an id if you decided you wanted to utilize some of the other features. 
+
+    //This is the color for the user's sign
+    // var displaycolorEl = document.querySelector("#");
+    // displaycolorEl.innerHTML = data.color
+    // console.log('color:', data.color);
+
+    //Sign that the user is most compatible with
+    var displayCompatEl = document.querySelector("#compatibilitySign");
+    displayCompatEl.innerHTML = data.compatibility
+    //console.log('sign compatibility:', data.compatibility);
+    
+    //THIS IS THE DAILY HOROSCOPE
+    var displayHoroscopeEl = document.querySelector("#todaysHoroscope");
+    displayHoroscopeEl.innerHTML = data.description
+    //console.log('daily horoscope:', data.description);
+
+    //This the lucky number of the day
+    // var displayNumberEl = document.querySelector("#")
+    // displayNumberEl.innerHTML = data.lucky_number
+    // console.log('lucky number of the day:', data.lucky_number);
+
+    //This is the user's lucky time of the day
+    var displayTimeEl = document.querySelector("#luckyTime");
+    displayTimeEl.innerHTML = data.lucky_time
+    //console.log('lucky time of the day:', data.lucky_time); 
     }
      })
+
+
 
