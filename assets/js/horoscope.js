@@ -1,17 +1,5 @@
-// var formEL = document.querySelector('#my-form');
-// var formSubmitHander = function(event) {
-//     event.preventDefault();
-//     /*
-//     event.preventDefault() stops the browser from performing the default action the event wants it to do. 
-//     In the case of submitting a form, it prevents the browser from sending the form's input data to a URL, 
-//     as we'll handle what happens with the form input data ourselves in JavaScript.
-//     */
-//     console.log('form submitted!');
-//     var name = document.getElementById('name').value;
-//     console.log('name:', name);
-// }
-// formEL.addEventListener("submit", formSubmitHander);
 
+//Selects the User's Birthday Month
 var monthFormEL = document.querySelector('#birthdayMonthForm');
 var formSubmitHander = function(event) {
     event.preventDefault();
@@ -21,11 +9,14 @@ var formSubmitHander = function(event) {
     as we'll handle what happens with the form input data ourselves in JavaScript.
     */
     console.log('Month form submitted!');
+    //Grabs the value for the user's birth month
     var birthMonth = document.getElementById('month').value;
     console.log('month:', birthMonth);
 }
+//Event Listener for Month
 monthFormEL.addEventListener("submit", formSubmitHander);
 
+//Selects the User's Birthday Day
 var dayFormEl = document.querySelector('#birthdayDayForm');
 var formSubmitHander = function(event) {
     event.preventDefault();
@@ -40,10 +31,11 @@ var formSubmitHander = function(event) {
 }
 dayFormEl.addEventListener("submit", formSubmitHander);
 
-
+//Function to get the Sun Sign
 function getSunSign (){
 	var bdayMonth = document.getElementById('month').value;
     var bdayDay = document.getElementById('day').value; 
+    //This allows us to compare the birthday in terms of a mathmatical value to then return the user's sign
     var sunSign = bdayMonth*100 + bdayDay;
     console.log(sunSign);
 	if (sunSign <= 120){        
@@ -88,7 +80,14 @@ function getSunSign (){
 	}
 }
 
-//document.getElementById("userSign").innerHTML = userSign; 
+/*Somehow we need to invoke the function so that we get the user's sign
+so we can create a variable such as "userSign" that can be used 
+to display the user's sign in the span element (see below)
+
+document.getElementById("userSign").innerHTML = userSign;
+
+AND to put in our URL for our API, so it pulls the appropriate data
+Right now it is still pulling exclusively aries */
 
 $.ajax({
     type:'POST',
