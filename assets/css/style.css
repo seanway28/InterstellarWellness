@@ -70,6 +70,8 @@ header h1 {
 }
 
 .todays-date {
+  margin-top: 6vh;
+  margin-right: 5vh;
   font-size: 5vh;
   font-family: Monarch;
 }
@@ -103,34 +105,19 @@ header h1 {
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-}
-
-#overlay-1 {
-  font-size: 8vh;
-}
-
-#overlay-2 {
   font-size: 7.6vh;
-  /* padding: 10px; */
-}
-
-#overlay-3 {
-  font-size: 8vh;
-}
-#overlay-4 {
-  font-size: 7.5vh;
-  /* width: 100%; */
 }
 
 .container:hover .overlay {
   opacity: 1;
 }
+
+.container a {
+  text-decoration: none;
+}
 /* End of Overlay */
 
 /* Beginning of Selections */
-.thumbnails {
-  width: 100%;
-}
 
 .space {
   justify-content: space-between;
@@ -169,7 +156,6 @@ header h1 {
 /* Horoscope Section */
 #horoscopeSection {
   font-family: Monarch;
-
   color: #505c19;
 }
 #horoscopeSection h3 {
@@ -178,10 +164,21 @@ header h1 {
   color: #505c19;
 }
 
+#horoscopeSection p {
+  font-size: 3vh;
+  background-color: var(--olive-green);
+  width: 80%;
+  text-align: center;
+}
+
 .form-control {
   width: 25vh;
   height: 5vh;
   text-align: center;
+  background-color: var(--lighter-gray);
+  color: var(--brown);
+  font-family: Monarch;
+  border-color: var(--forest-green);
 }
 
 #todaysHorHeading {
@@ -194,24 +191,9 @@ header h1 {
   font-size: 6.5vh;
 }
 
-#todaysHoroscope {
-  font-size: 3vh;
-  background-color: var(--olive-green);
-  width: 80%;
-  text-align: center;
-}
-
 #usersSign {
   color: var(--brown);
 }
-
-.text p {
-  font-size: 3vh;
-  background-color: var(--lighter-green);
-  width: 80%;
-  text-align: center;
-}
-
 /* End of Horoscope Section */
 
 /* Inspirational Section */
@@ -237,6 +219,10 @@ header h1 {
   color: #505c19;
 }
 
+#meditationVideo {
+  margin-top: 3vh;
+}
+
 #videoTitle {
   font-family: Monarch;
   color: #505c19;
@@ -252,9 +238,14 @@ header h1 {
 /* End of Meditation Section */
 
 /* Journal Section */
-#journalSection h1 {
+.journal-container h1 {
   font-size: 9vh;
   font-family: Smoothy;
+  color: #505c19;
+}
+.journal-container h4 {
+  font-size: 4vh;
+  font-family: Monarch;
   color: #505c19;
 }
 textarea {
@@ -265,4 +256,170 @@ textarea {
   width: 80%;
   text-align: left;
 }
+
+iframe {
+  margin-left: 35vh;
+  width: 400px;
+  height: 300px;
+}
 /* End of Journal Section */
+
+/* Media Queries */
+@media screen and (max-width: 980px) {
+  header h1 {
+    font-size: 8vh;
+    width: 100%;
+    text-align: center;
+  }
+
+  .arrow-up {
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 56.6px solid #836e6c;
+  }
+
+  .todays-date {
+    font-size: 5vh;
+  }
+
+  #feel h1 {
+    font-size: 6vh;
+  }
+
+  .overlay {
+    font-size: 5vh;
+  }
+
+  #selection-1 {
+    width: 22vh;
+    height: 22vh;
+  }
+
+  #selection-2 {
+    width: 22vh;
+    height: 22vh;
+  }
+
+  #selection-3 {
+    width: 22vh;
+    height: 22vh;
+  }
+
+  #selection-4 {
+    width: 22vh;
+    height: 22vh;
+  }
+
+  #todaysHorHeading {
+    margin-left: 0vh;
+    margin-top: 1vh;
+  }
+
+  #horoscopeSection h3 {
+    font-size: 4vh;
+    margin-bottom: 2vh;
+  }
+
+  .form-control {
+    width: 15vh;
+    height: 5vh;
+    margin-bottom: 3vh;
+  }
+
+  #todaysHorHeading h2 {
+    font-size: 4vh;
+  }
+
+  #horoscopeSection p {
+    font-size: 2.3vh;
+    background-color: inherit;
+    width: 80%;
+    text-align: left;
+  }
+
+  #inspirationSection h1 {
+    font-size: 6vh;
+  }
+
+  .inspiration-quote {
+    font-size: 2.3vh;
+  }
+
+  #meditateSection h1 {
+    font-size: 6vh;
+  }
+
+  #videoTitle {
+    font-size: 3vh;
+  }
+
+  .description {
+    font-size: 2.3vh;
+  }
+
+  .journal-container h1 {
+    font-size: 6vh;
+  }
+  .journal-container h4 {
+    font-size: 2.3vh;
+  }
+  textarea {
+    font-size: 1.8vh;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header h1 {
+    font-size: 7vh;
+  }
+
+  .arrow-up {
+    border-left: 0px solid transparent;
+    border-right: 0px solid transparent;
+    border-bottom: 0px solid #836e6c;
+    margin-top: 0px;
+    margin-left: 0px;
+  }
+
+  .todays-date {
+    font-size: 4vh;
+    margin-top: 1vh;
+    margin-right: 1vh;
+  }
+
+  .overlay {
+    font-size: 4.5vh;
+  }
+
+  #selection-1 {
+    width: 17vh;
+    height: 17vh;
+  }
+
+  #selection-2 {
+    width: 17vh;
+    height: 17vh;
+  }
+
+  #selection-3 {
+    width: 17vh;
+    height: 17vh;
+  }
+
+  #selection-4 {
+    width: 17vh;
+    height: 17vh;
+  }
+
+  #horoscopeSection h3 {
+    font-size: 3vh;
+  }
+
+  section {
+    height: 70vh;
+  }
+
+  iframe {
+    margin-left: 5vh;
+  }
+}
