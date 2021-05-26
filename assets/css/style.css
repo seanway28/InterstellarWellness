@@ -70,6 +70,8 @@ header h1 {
 }
 
 .todays-date {
+  margin-top: 6vh;
+  margin-right: 5vh;
   font-size: 5vh;
   font-family: Monarch;
 }
@@ -103,34 +105,19 @@ header h1 {
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-}
-
-#overlay-1 {
-  font-size: 8vh;
-}
-
-#overlay-2 {
   font-size: 7.6vh;
-  /* padding: 10px; */
-}
-
-#overlay-3 {
-  font-size: 8vh;
-}
-#overlay-4 {
-  font-size: 7.5vh;
-  /* width: 100%; */
 }
 
 .container:hover .overlay {
   opacity: 1;
 }
+
+.container a {
+  text-decoration: none;
+}
 /* End of Overlay */
 
 /* Beginning of Selections */
-.thumbnails {
-  width: 100%;
-}
 
 .space {
   justify-content: space-between;
@@ -169,7 +156,6 @@ header h1 {
 /* Horoscope Section */
 #horoscopeSection {
   font-family: Monarch;
-
   color: #505c19;
 }
 #horoscopeSection h3 {
@@ -182,6 +168,10 @@ header h1 {
   width: 25vh;
   height: 5vh;
   text-align: center;
+  background-color: var(--lighter-gray);
+  color: var(--brown);
+  font-family: Monarch;
+  border-color: var(--forest-green);
 }
 
 #todaysHorHeading {
@@ -204,14 +194,6 @@ header h1 {
 #usersSign {
   color: var(--brown);
 }
-
-.text p {
-  font-size: 3vh;
-  background-color: var(--lighter-green);
-  width: 80%;
-  text-align: center;
-}
-
 /* End of Horoscope Section */
 
 /* Inspirational Section */
@@ -237,6 +219,10 @@ header h1 {
   color: #505c19;
 }
 
+#meditationVideo {
+  margin-top: 3vh;
+}
+
 #videoTitle {
   font-family: Monarch;
   color: #505c19;
@@ -252,9 +238,14 @@ header h1 {
 /* End of Meditation Section */
 
 /* Journal Section */
-#journalSection h1 {
+.journal-container h1 {
   font-size: 9vh;
   font-family: Smoothy;
+  color: #505c19;
+}
+.journal-container h4 {
+  font-size: 4vh;
+  font-family: Monarch;
   color: #505c19;
 }
 textarea {
@@ -266,3 +257,54 @@ textarea {
   text-align: left;
 }
 /* End of Journal Section */
+
+/* Media Queries */
+/* @media screen and (max-width: 980px) {
+  header {
+    padding-bottom: 0;
+    justify-content: center;
+    position: relative;
+  }
+
+  header h1 {
+    width: 100%;
+    text-align: center;
+  }
+
+  header nav ul {
+    margin-top: 20px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  header nav ul li a {
+    font-size: 20px;
+  }
+
+  footer h2,
+  footer div {
+    text-align: center;
+    width: 100%;
+  }
+
+  .hero-cta,
+  .hero-form {
+    width: 100%;
+  }
+
+  .hero-cta {
+    text-align: center;
+  }
+
+  .section-title {
+    width: 80%;
+  }
+
+  .trainer {
+    flex: 0 70%;
+  }
+
+  .contact-info iframe {
+    flex: 1 100%;
+  }
+} */
