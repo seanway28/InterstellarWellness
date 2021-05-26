@@ -1,8 +1,3 @@
-/* * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-} */
 /* Common Colors */
 :root {
   --light-green: #c8dcc9; /*background*/
@@ -172,11 +167,17 @@ header h1 {
 /* Selections End */
 
 /* Horoscope Section */
-#horoscopeSection h3 {
+#horoscopeSection {
   font-family: Monarch;
-  font-size: 6.5vh;
+
   color: #505c19;
 }
+#horoscopeSection h3 {
+  font-size: 5vh;
+  font-family: Monarch;
+  color: #505c19;
+}
+
 .form-control {
   width: 25vh;
   height: 5vh;
@@ -189,29 +190,28 @@ header h1 {
 
 #todaysHorHeading h2 {
   font-family: Monarch;
-  font-size: 6.5vh;
   color: #505c19;
+  font-size: 6.5vh;
 }
 
 #todaysHoroscope {
   font-size: 3vh;
-  font-family: Monarch;
-  color: #505c19;
   background-color: var(--olive-green);
   width: 80%;
   text-align: center;
 }
 
-.other-horoscopes {
-  display: flex;
-  justify-content: space-between;
+#usersSign {
+  color: var(--brown);
 }
 
-#tomorrowHoroscope,
-#weekHoroscope {
+.text p {
+  font-size: 3vh;
   background-color: var(--lighter-green);
-  width: 50%;
+  width: 80%;
+  text-align: center;
 }
+
 /* End of Horoscope Section */
 
 /* Inspirational Section */
