@@ -164,6 +164,13 @@ header h1 {
   color: #505c19;
 }
 
+#horoscopeSection p {
+  font-size: 3vh;
+  background-color: var(--olive-green);
+  width: 80%;
+  text-align: center;
+}
+
 .form-control {
   width: 25vh;
   height: 5vh;
@@ -182,13 +189,6 @@ header h1 {
   font-family: Monarch;
   color: #505c19;
   font-size: 6.5vh;
-}
-
-#todaysHoroscope {
-  font-size: 3vh;
-  background-color: var(--olive-green);
-  width: 80%;
-  text-align: center;
 }
 
 #usersSign {
@@ -256,55 +256,170 @@ textarea {
   width: 80%;
   text-align: left;
 }
+
+iframe {
+  margin-left: 35vh;
+  width: 400px;
+  height: 300px;
+}
 /* End of Journal Section */
 
 /* Media Queries */
-/* @media screen and (max-width: 980px) {
-  header {
-    padding-bottom: 0;
-    justify-content: center;
-    position: relative;
-  }
-
+@media screen and (max-width: 980px) {
   header h1 {
+    font-size: 8vh;
     width: 100%;
     text-align: center;
   }
 
-  header nav ul {
-    margin-top: 20px;
-    width: 100%;
-    justify-content: center;
+  .arrow-up {
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 56.6px solid #836e6c;
   }
 
-  header nav ul li a {
-    font-size: 20px;
+  .todays-date {
+    font-size: 5vh;
   }
 
-  footer h2,
-  footer div {
-    text-align: center;
-    width: 100%;
+  #feel h1 {
+    font-size: 6vh;
   }
 
-  .hero-cta,
-  .hero-form {
-    width: 100%;
+  .overlay {
+    font-size: 5vh;
   }
 
-  .hero-cta {
-    text-align: center;
+  #selection-1 {
+    width: 22vh;
+    height: 22vh;
   }
 
-  .section-title {
+  #selection-2 {
+    width: 22vh;
+    height: 22vh;
+  }
+
+  #selection-3 {
+    width: 22vh;
+    height: 22vh;
+  }
+
+  #selection-4 {
+    width: 22vh;
+    height: 22vh;
+  }
+
+  #todaysHorHeading {
+    margin-left: 0vh;
+    margin-top: 1vh;
+  }
+
+  #horoscopeSection h3 {
+    font-size: 4vh;
+    margin-bottom: 2vh;
+  }
+
+  .form-control {
+    width: 15vh;
+    height: 5vh;
+    margin-bottom: 3vh;
+  }
+
+  #todaysHorHeading h2 {
+    font-size: 4vh;
+  }
+
+  #horoscopeSection p {
+    font-size: 2.3vh;
+    background-color: inherit;
     width: 80%;
+    text-align: left;
   }
 
-  .trainer {
-    flex: 0 70%;
+  #inspirationSection h1 {
+    font-size: 6vh;
   }
 
-  .contact-info iframe {
-    flex: 1 100%;
+  .inspiration-quote {
+    font-size: 2.3vh;
   }
-} */
+
+  #meditateSection h1 {
+    font-size: 6vh;
+  }
+
+  #videoTitle {
+    font-size: 3vh;
+  }
+
+  .description {
+    font-size: 2.3vh;
+  }
+
+  .journal-container h1 {
+    font-size: 6vh;
+  }
+  .journal-container h4 {
+    font-size: 2.3vh;
+  }
+  textarea {
+    font-size: 1.8vh;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header h1 {
+    font-size: 7vh;
+  }
+
+  .arrow-up {
+    border-left: 0px solid transparent;
+    border-right: 0px solid transparent;
+    border-bottom: 0px solid #836e6c;
+    margin-top: 0px;
+    margin-left: 0px;
+  }
+
+  .todays-date {
+    font-size: 4vh;
+    margin-top: 1vh;
+    margin-right: 1vh;
+  }
+
+  .overlay {
+    font-size: 4.5vh;
+  }
+
+  #selection-1 {
+    width: 17vh;
+    height: 17vh;
+  }
+
+  #selection-2 {
+    width: 17vh;
+    height: 17vh;
+  }
+
+  #selection-3 {
+    width: 17vh;
+    height: 17vh;
+  }
+
+  #selection-4 {
+    width: 17vh;
+    height: 17vh;
+  }
+
+  #horoscopeSection h3 {
+    font-size: 3vh;
+  }
+
+  section {
+    height: 70vh;
+  }
+
+  iframe {
+    margin-left: 5vh;
+  }
+}
