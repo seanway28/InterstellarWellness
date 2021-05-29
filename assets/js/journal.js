@@ -1,7 +1,7 @@
 
 $(document).ready(function(){
     //Click listener for the save buttons
-    $(".journalBtn").on("click", function () {
+    $("#journalBtn").on("click", function () {
         console.log($(this)("journal-text"));
         var userInput = $(this)("journal-text").val().trim();
         console.log(userInput);
